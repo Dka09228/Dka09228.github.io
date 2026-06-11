@@ -231,6 +231,9 @@ function applyLanguage(lang) {
   });
 
   localStorage.setItem("lang", lang);
+
+  /* Сообщаем остальным скриптам о смене языка (перезапуск эффекта печати) */
+  document.dispatchEvent(new CustomEvent("langchange", { detail: { lang } }));
 }
 
 document.addEventListener("DOMContentLoaded", () => {

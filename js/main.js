@@ -47,10 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let ringX = -100, ringY = -100;     // позиция кольца (с инерцией)
 
     window.addEventListener("mousemove", (e) => {
+      /* Системный курсор скрываем только после первого реального движения —
+         так курсор гарантированно не «исчезает» ни при каких условиях */
+      document.body.classList.add("cursor-enabled");
       mouseX = e.clientX;
       mouseY = e.clientY;
       dot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
     }, { passive: true });
+
+    window.addEventListener("mousedown", () => dot.classList.add("is-pressed"));
+    window.addEventListener("mouseup", () => dot.classList.remove("is-pressed"));
 
     (function animateRing() {
       ringX += (mouseX - ringX) * 0.16;
@@ -174,6 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const progress = document.querySelector(".scroll-progress");
   const backToTop = document.getElementById("backToTop");
   const navLinks = document.querySelectorAll(".nav__link");
+  const heroContent = document.querySelector(".hero__content");
 
   function onScroll() {
     const y = window.scrollY;
@@ -182,6 +189,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     progress.style.width = `${(y / docHeight) * 100}%`;
+
+    /* Параллакс hero: контент уезжает медленнее скролла и плавно гаснет */
+    if (heroContent && !prefersReducedMotion && y < window.innerHeight) {
+      heroContent.style.transform = `translateY(${y * 0.22}px)`;
+      heroContent.style.opacity = Math.max(0, 1 - y / (window.innerHeight * 0.9));
+    }
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
@@ -310,7 +323,75 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ================================================================
-     10. Контактная форма — без backend (mailto)
+     10. Эффект печатающегося текста в терминальной строке hero
+         (перезапускается при смене языка — событие langchange из i18n.js)
+  ================================================================ */
+  const typeEl = document.getElementById("typewriter");
+  let typeTimer = null;
+
+  function runTypewriter() {
+    if (!typeEl) return;
+    const full = typeEl.textContent;
+    if (prefersReducedMotion || !full) return;
+
+    clearInterval(typeTimer);
+    let i = 0;
+    typeEl.textContent = "";
+    typeTimer = setInterval(() => {
+      i += 1;
+      typeEl.textContent = full.slice(0, i);
+      if (i >= full.length) clearInterval(typeTimer);
+    }, 36);
+  }
+  runTypewriter();
+  document.addEventListener("langchange", runTypewriter);
+
+  /* ================================================================
+     11. Параллакс световых сфер за курсором (hero)
+  ================================================================ */
+  const hero = document.getElementById("hero");
+  const orbs = document.querySelectorAll(".orb");
+  if (hero && orbs.length && finePointer && !prefersReducedMotion) {
+    hero.addEventListener("mousemove", (e) => {
+      const cx = e.clientX / window.innerWidth - 0.5;
+      const cy = e.clientY / window.innerHeight - 0.5;
+      orbs.forEach((orb, i) => {
+        /* Каждая сфера на своей «глубине» — разная амплитуда */
+        const depth = (i + 1) * 22;
+        orb.style.translate = `${(cx * depth).toFixed(1)}px ${(cy * depth).toFixed(1)}px`;
+      });
+    }, { passive: true });
+  }
+
+  /* ================================================================
+     12. 3D-наклон карточек услуг за курсором
+  ================================================================ */
+  if (finePointer && !prefersReducedMotion) {
+    document.querySelectorAll(".tilt").forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const r = card.getBoundingClientRect();
+        const dx = (e.clientX - r.left) / r.width - 0.5;
+        const dy = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transform =
+          `perspective(700px) rotateX(${(-dy * 8).toFixed(2)}deg) rotateY(${(dx * 8).toFixed(2)}deg) translateY(-4px)`;
+      }, { passive: true });
+      card.addEventListener("mouseleave", () => { card.style.transform = ""; });
+    });
+
+    /* Магнитные кнопки в hero — слегка тянутся к курсору */
+    document.querySelectorAll(".hero__actions .btn").forEach((btn) => {
+      btn.addEventListener("mousemove", (e) => {
+        const r = btn.getBoundingClientRect();
+        const dx = e.clientX - r.left - r.width / 2;
+        const dy = e.clientY - r.top - r.height / 2;
+        btn.style.transform = `translate(${(dx * 0.18).toFixed(1)}px, ${(dy * 0.3).toFixed(1)}px)`;
+      }, { passive: true });
+      btn.addEventListener("mouseleave", () => { btn.style.transform = ""; });
+    });
+  }
+
+  /* ================================================================
+     13. Контактная форма — без backend (mailto)
   ================================================================ */
   const form = document.getElementById("contactForm");
   form.addEventListener("submit", (e) => {
@@ -328,7 +409,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ================================================================
-     11. Текущий год в футере
+     14. Текущий год в футере
   ================================================================ */
   document.getElementById("year").textContent = new Date().getFullYear();
 });
