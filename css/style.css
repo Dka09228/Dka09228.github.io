@@ -945,4 +945,5 @@ section[id] { scroll-margin-top: 90px; }
   .hero__stats { grid-template-columns: 1fr 1fr; gap: 0.7rem; }
   .stat { padding: 1.1rem 0.8rem; }
   .hero__actions .btn { width: 100%; }
+  .lang-switch__btn { padding: 0.42rem 0.55rem; font-size: 0.68rem; }
 }
