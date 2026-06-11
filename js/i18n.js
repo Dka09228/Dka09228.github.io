@@ -10,6 +10,9 @@
 const I18N = {
   /* ----------------------------- РУССКИЙ -------------------------- */
   ru: {
+    "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
+    "meta.description": "Full-Stack Software Engineer и Automation Engineer. Разработка REST API на FastAPI и Golang, микросервисная архитектура, PostgreSQL, Docker, CI/CD, автоматизация бизнес-процессов и корпоративные интеграции.",
+
     "header.online": "онлайн",
 
     "nav.about": "Профиль",
@@ -105,6 +108,9 @@ const I18N = {
 
   /* ----------------------------- ҚАЗАҚША -------------------------- */
   kz: {
+    "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
+    "meta.description": "Full-Stack Software Engineer және Automation Engineer. FastAPI мен Golang негізіндегі REST API әзірлеу, микросервистік архитектура, PostgreSQL, Docker, CI/CD, бизнес-процестерді автоматтандыру және корпоративтік интеграциялар.",
+
     "header.online": "онлайн",
 
     "nav.about": "Профиль",
@@ -196,20 +202,119 @@ const I18N = {
     "contact.form.hint": "// дайын хатпен пошта клиентіңіз ашылады",
 
     "footer.built": "Қолмен жобаланып, құрастырылған — HTML, CSS және Vanilla JS."
+  },
+
+  /* ----------------------------- ENGLISH -------------------------- */
+  en: {
+    "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
+    "meta.description": "Full-Stack Software Engineer and Automation Engineer. REST API development with FastAPI and Golang, microservice architecture, PostgreSQL, Docker, CI/CD, business process automation and enterprise integrations.",
+
+    "header.online": "online",
+
+    "nav.about": "Profile",
+    "nav.services": "Services",
+    "nav.stack": "Tech Stack",
+    "nav.projects": "Projects",
+    "nav.contact": "Contact",
+
+    "hero.terminal": "initializing developer control center…",
+    "hero.title1": "Digital systems",
+    "hero.title2": "that work for your business",
+    "hero.subtitle": "I design and build backend systems, REST APIs, microservices and business-process automation solutions — from architecture to production.",
+    "hero.hire": "Hire Me",
+    "hero.contact": "Contact Me",
+
+    "stats.apis": "APIs Developed",
+    "stats.projects": "Projects Completed",
+    "stats.automation": "Automation Solutions",
+    "stats.years": "Years of Experience",
+
+    "about.module": "// MODULE 01 — PROFILE",
+    "about.title": "Systems & Automation Engineer",
+    "about.p1": "I'm Kurmet Dosmagambet, a Full-Stack engineer specializing in backend development and automation. I work with enterprise systems: workforce management, third-party integrations, monitoring and high-load APIs.",
+    "about.p2": "My approach is engineering-first: architecture and data before code. Every solution is designed to be easy to maintain, scale and measure. To me, automation is a way to eliminate manual work and give time back to the business.",
+    "about.d1.title": "Architecture before code",
+    "about.d1.text": "Microservices, clean API contracts and well-designed PostgreSQL data schemas are the foundation of every project.",
+    "about.d2.title": "Process automation",
+    "about.d2.text": "I turn manual business processes into reliable automated pipelines: from CI/CD to enterprise system integrations.",
+    "about.d3.title": "Production reliability",
+    "about.d3.text": "Docker, monitoring, logging and load-aware engineering — systems that run 24/7 without surprises.",
+
+    "services.module": "// MODULE 02 — SERVICE ARCHITECTURE",
+    "services.title": "What I do for business",
+    "services.subtitle": "Every service is a complete module: from task analysis to a solution deployed in production.",
+    "services.s1.title": "Full-Stack Development",
+    "services.s1.text": "Full-cycle web application development: React/TypeScript on the frontend, Python and Golang on the backend.",
+    "services.s2.title": "Backend Development",
+    "services.s2.text": "Reliable server-side systems with FastAPI: business logic, authentication, background jobs, integrations.",
+    "services.s3.title": "Golang Development",
+    "services.s3.text": "High-load services in Go: concurrent processing, low latency, efficient resource usage.",
+    "services.s4.title": "API Development",
+    "services.s4.text": "REST API design and development: versioning, OpenAPI documentation, security and performance.",
+    "services.s5.title": "Database Design",
+    "services.s5.text": "PostgreSQL schema design and Redis caching: indexes, migrations, data integrity and query speed.",
+    "services.s6.title": "DevOps & Deployment",
+    "services.s6.text": "Docker, Nginx, GitLab CI/CD and Linux server administration: from repository to stable production.",
+    "services.s7.title": "Process Automation",
+    "services.s7.text": "Business process automation: workforce management, reporting, integrations and eliminating manual work.",
+    "services.s8.title": "Technical Consulting",
+    "services.s8.text": "Architecture audits, technology selection, scaling plans — engineering decisions justified in business terms.",
+
+    "stack.module": "// MODULE 03 — TECHNOLOGY ECOSYSTEM",
+    "stack.title": "Tools I command",
+    "stack.subtitle": "A unified ecosystem: from interface to server, from database to monitoring.",
+    "stack.db": "Databases",
+    "stack.servers": "Server Administration",
+    "stack.expertise": "Additional Expertise",
+    "stack.e1": "Business Process Automation",
+    "stack.e2": "Workforce Management Systems",
+    "stack.e3": "Enterprise Integrations",
+    "stack.e4": "Monitoring Systems",
+    "stack.e5": "System Architecture",
+    "stack.e6": "Mobile Development",
+    "stack.core": "// Core competencies",
+
+    "portfolio.module": "// MODULE 04 — PROJECT NETWORK",
+    "portfolio.title": "Selected projects",
+    "portfolio.subtitle": "Systems already solving real business problems.",
+    "portfolio.p1.title": "Workforce Management System",
+    "portfolio.p1.text": "Enterprise staff management system: shift tracking, automated reporting, integration with internal company services.",
+    "portfolio.p2.title": "High-Load API Service",
+    "portfolio.p2.text": "A Golang microservice for processing data streams: concurrent processing, Redis caching, monitoring and alerting.",
+    "portfolio.p3.title": "Process Automation Platform",
+    "portfolio.p3.text": "Mobile app backend and automation pipelines: external API integrations, background jobs, CI/CD deployment.",
+    "portfolio.view": "Code on GitHub",
+
+    "testimonials.module": "// MODULE 05 — TESTIMONIALS",
+    "testimonials.title": "What clients say",
+    "testimonials.empty": "Reviews from my first clients will appear here. Want to be one of them — drop me a line.",
+    "testimonials.cta": "Discuss a project",
+
+    "contact.module": "// MODULE 06 — CONTACT GATEWAY",
+    "contact.title": "Let's discuss your project",
+    "contact.subtitle": "I reply within 24 hours. Describe your task — I'll propose a solution and an estimate.",
+    "contact.form.name": "Your name",
+    "contact.form.email": "Your email",
+    "contact.form.message": "Describe your task",
+    "contact.form.submit": "Send message",
+    "contact.form.hint": "// your email client will open with a ready-to-send message",
+
+    "footer.built": "Designed and built by hand — HTML, CSS and Vanilla JS."
   }
 };
 
 /* Определение стартового языка:
    1) сохранённый выбор в localStorage
-   2) язык браузера (kk → казахский)
-   3) русский по умолчанию */
+   2) язык браузера: kk → казахский, ru → русский
+   3) английский по умолчанию (зарубежные клиенты Upwork/Fiverr) */
 function detectLanguage() {
   const saved = localStorage.getItem("lang");
   if (saved && I18N[saved]) return saved;
 
   const browser = (navigator.language || "").toLowerCase();
   if (browser.startsWith("kk")) return "kz";
-  return "ru";
+  if (browser.startsWith("ru")) return "ru";
+  return "en";
 }
 
 /* Применение языка ко всем элементам с data-i18n */
@@ -222,8 +327,13 @@ function applyLanguage(lang) {
     if (dict[key] !== undefined) el.textContent = dict[key];
   });
 
+  /* Заголовок вкладки и описание страницы */
+  document.title = dict["meta.title"];
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.setAttribute("content", dict["meta.description"]);
+
   /* Атрибут lang для доступности и SEO */
-  document.documentElement.setAttribute("lang", lang === "kz" ? "kk" : "ru");
+  document.documentElement.setAttribute("lang", lang === "kz" ? "kk" : lang);
 
   /* Состояние кнопок переключателя */
   document.querySelectorAll(".lang-switch__btn").forEach((btn) => {
