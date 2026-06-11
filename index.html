@@ -131,6 +131,9 @@
     ================================================================ -->
     <section class="hero" id="hero">
       <canvas id="particles" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="orb orb--1" aria-hidden="true"></div>
+      <div class="orb orb--2" aria-hidden="true"></div>
+      <div class="orb orb--3" aria-hidden="true"></div>
       <div class="hero__grid-overlay" aria-hidden="true"></div>
 
       <div class="hero__content container">
@@ -175,6 +178,14 @@
         <div class="stat glass">
           <span class="stat__value mono"><span class="counter" data-count="4">0</span>+</span>
           <span class="stat__label" data-i18n="stats.years">Лет опыта</span>
+        </div>
+      </div>
+
+      <!-- Бегущая лента технологий (две копии — для бесшовного цикла) -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span class="ticker__item">Python</span><span class="ticker__item">FastAPI</span><span class="ticker__item">Golang</span><span class="ticker__item">PostgreSQL</span><span class="ticker__item">Redis</span><span class="ticker__item">Docker</span><span class="ticker__item">Microservices</span><span class="ticker__item">REST API</span><span class="ticker__item">React</span><span class="ticker__item">TypeScript</span><span class="ticker__item">GitLab CI/CD</span><span class="ticker__item">Nginx</span><span class="ticker__item">Linux</span><span class="ticker__item">Automation</span>
+          <span class="ticker__item">Python</span><span class="ticker__item">FastAPI</span><span class="ticker__item">Golang</span><span class="ticker__item">PostgreSQL</span><span class="ticker__item">Redis</span><span class="ticker__item">Docker</span><span class="ticker__item">Microservices</span><span class="ticker__item">REST API</span><span class="ticker__item">React</span><span class="ticker__item">TypeScript</span><span class="ticker__item">GitLab CI/CD</span><span class="ticker__item">Nginx</span><span class="ticker__item">Linux</span><span class="ticker__item">Automation</span>
         </div>
       </div>
     </section>
