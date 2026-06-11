@@ -1,0 +1,6 @@
+# robots.txt — Kurmet Dosmagambet portfolio
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dka09228.github.io/sitemap.xml
