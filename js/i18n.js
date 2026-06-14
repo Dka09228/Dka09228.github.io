@@ -1,5 +1,5 @@
 /* ====================================================================
-   i18n.js — система мультиязычности (русский / қазақша)
+   i18n.js — система мультиязычности (русский / английский)
    - словари переводов для всех элементов с атрибутом data-i18n
    - сохранение выбора в localStorage
    - автоопределение языка браузера при первом визите
@@ -106,104 +106,6 @@ const I18N = {
     "footer.built": "Спроектировано и собрано вручную — HTML, CSS и Vanilla JS."
   },
 
-  /* ----------------------------- ҚАЗАҚША -------------------------- */
-  kz: {
-    "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
-    "meta.description": "Full-Stack Software Engineer және Automation Engineer. FastAPI мен Golang негізіндегі REST API әзірлеу, микросервистік архитектура, PostgreSQL, Docker, CI/CD, бизнес-процестерді автоматтандыру және корпоративтік интеграциялар.",
-
-    "header.online": "онлайн",
-
-    "nav.about": "Профиль",
-    "nav.services": "Қызметтер",
-    "nav.stack": "Технологиялар",
-    "nav.projects": "Жобалар",
-    "nav.contact": "Байланыс",
-
-    "hero.terminal": "әзірлеуді басқару орталығы іске қосылуда…",
-    "hero.title1": "Сіздің бизнесіңізге",
-    "hero.title2": "жұмыс істейтін цифрлық жүйелер",
-    "hero.subtitle": "Backend-жүйелерді, REST API, микросервистерді және бизнес-процестерді автоматтандыру шешімдерін жобалаймын әрі әзірлеймін — архитектурадан продакшенге дейін.",
-    "hero.hire": "Мені жалдау",
-    "hero.contact": "Байланысу",
-
-    "stats.apis": "Әзірленген API",
-    "stats.projects": "Аяқталған жобалар",
-    "stats.automation": "Автоматтандыру шешімдері",
-    "stats.years": "Жыл тәжірибе",
-
-    "about.module": "// МОДУЛЬ 01 — ПРОФИЛЬ",
-    "about.title": "Жүйелер мен автоматтандыру инженері",
-    "about.p1": "Мен — Kurmet Dosmagambet, backend-әзірлеу мен автоматтандыруға маманданған Full-Stack инженермін. Корпоративтік жүйелермен жұмыс істеймін: workforce management, сыртқы сервистермен интеграциялар, мониторинг және жоғары жүктемелі API.",
-    "about.p2": "Менің тәсілім — инженерлік: алдымен архитектура мен деректер, содан кейін код. Әр шешім оңай қолдауға, масштабтауға және өлшеуге болатындай етіп жобаланады. Автоматтандыру — қол еңбегін жойып, бизнеске уақытты қайтару тәсілі.",
-    "about.d1.title": "Кодтан бұрын архитектура",
-    "about.d1.text": "Микросервистер, таза API келісімшарттары және ойластырылған PostgreSQL деректер схемалары — әр жобаның іргетасы.",
-    "about.d2.title": "Процестерді автоматтандыру",
-    "about.d2.text": "Қолмен жасалатын бизнес-процестерді сенімді автоматты пайплайндарға айналдырамын: CI/CD-ден корпоративтік интеграцияларға дейін.",
-    "about.d3.title": "Продакшен сенімділігі",
-    "about.d3.text": "Docker, мониторинг, логтау және жүктемелік ойлау — тәулік бойы тоқтаусыз жұмыс істейтін жүйелер.",
-
-    "services.module": "// МОДУЛЬ 02 — ҚЫЗМЕТТЕР АРХИТЕКТУРАСЫ",
-    "services.title": "Бизнес үшін не істеймін",
-    "services.subtitle": "Әр қызмет — аяқталған модуль: тапсырманы талдаудан продакшенге орналастырылған шешімге дейін.",
-    "services.s1.title": "Full-Stack Development",
-    "services.s1.text": "Веб-қосымшаларды толық циклмен әзірлеу: фронтендте React/TypeScript, бэкендте Python және Golang.",
-    "services.s2.title": "Backend Development",
-    "services.s2.text": "FastAPI негізіндегі сенімді серверлік жүйелер: бизнес-логика, аутентификация, фондық тапсырмалар, интеграциялар.",
-    "services.s3.title": "Golang Development",
-    "services.s3.text": "Go тіліндегі жоғары жүктемелі сервистер: қатар өңдеу, төмен кідіріс, ресурстарды тиімді пайдалану.",
-    "services.s4.title": "API Development",
-    "services.s4.text": "REST API жобалау және әзірлеу: нұсқалау, OpenAPI құжаттамасы, қауіпсіздік және өнімділік.",
-    "services.s5.title": "Database Design",
-    "services.s5.text": "PostgreSQL схемаларын жобалау және Redis кештеу: индекстер, миграциялар, тұтастық және сұраныс жылдамдығы.",
-    "services.s6.title": "DevOps & Deployment",
-    "services.s6.text": "Docker, Nginx, GitLab CI/CD және Linux серверлерін басқару: репозиторийден тұрақты продакшенге дейін.",
-    "services.s7.title": "Process Automation",
-    "services.s7.text": "Бизнес-процестерді автоматтандыру: workforce management, есептілік, интеграциялар және қол еңбегін жою.",
-    "services.s8.title": "Technical Consulting",
-    "services.s8.text": "Архитектура аудиті, технологияларды таңдау, масштабтау жоспары — бизнеске негізделген инженерлік шешімдер.",
-
-    "stack.module": "// МОДУЛЬ 03 — ТЕХНОЛОГИЯЛЫҚ ЭКОЖҮЙЕ",
-    "stack.title": "Мен басқаратын құралдар",
-    "stack.subtitle": "Біртұтас экожүйе: интерфейстен серверге дейін, дерекқордан мониторингке дейін.",
-    "stack.db": "Дерекқорлар",
-    "stack.servers": "Серверлерді басқару",
-    "stack.expertise": "Қосымша сараптама",
-    "stack.e1": "Бизнес-процестерді автоматтандыру",
-    "stack.e2": "Workforce Management жүйелері",
-    "stack.e3": "Корпоративтік интеграциялар",
-    "stack.e4": "Мониторинг жүйелері",
-    "stack.e5": "Жүйелік архитектура",
-    "stack.e6": "Мобильді әзірлеу",
-    "stack.core": "// Негізгі құзыреттер",
-
-    "portfolio.module": "// МОДУЛЬ 04 — ЖОБАЛАР ЖЕЛІСІ",
-    "portfolio.title": "Таңдаулы жобалар",
-    "portfolio.subtitle": "Бизнестің нақты міндеттерін шешіп жатқан жүйелер.",
-    "portfolio.p1.title": "Workforce Management жүйесі",
-    "portfolio.p1.text": "Персоналды басқарудың корпоративтік жүйесі: ауысымдарды есепке алу, автоматты есептер, компанияның ішкі сервистерімен интеграция.",
-    "portfolio.p2.title": "Жоғары жүктемелі API-сервис",
-    "portfolio.p2.text": "Деректер ағындарын өңдеуге арналған Golang микросервисі: қатар өңдеу, Redis кештеу, мониторинг және ескерту жүйесі.",
-    "portfolio.p3.title": "Процестерді автоматтандыру платформасы",
-    "portfolio.p3.text": "Мобильді қосымшаның backend-і және автоматтандыру пайплайндары: сыртқы API интеграциясы, фондық тапсырмалар, CI/CD арқылы орналастыру.",
-    "portfolio.view": "GitHub-тағы код",
-
-    "testimonials.module": "// МОДУЛЬ 05 — ПІКІРЛЕР",
-    "testimonials.title": "Клиенттер не дейді",
-    "testimonials.empty": "Мұнда алғашқы клиенттердің пікірлері пайда болады. Солардың бірі болғыңыз келсе — маған жазыңыз.",
-    "testimonials.cta": "Жобаны талқылау",
-
-    "contact.module": "// МОДУЛЬ 06 — БАЙЛАНЫС ШЛЮЗІ",
-    "contact.title": "Жобаңызды талқылайық",
-    "contact.subtitle": "24 сағат ішінде жауап беремін. Тапсырманы сипаттаңыз — шешім мен бағалау ұсынамын.",
-    "contact.form.name": "Атыңыз",
-    "contact.form.email": "Email мекенжайыңыз",
-    "contact.form.message": "Тапсырманы сипаттаңыз",
-    "contact.form.submit": "Хабарлама жіберу",
-    "contact.form.hint": "// дайын хатпен пошта клиентіңіз ашылады",
-
-    "footer.built": "Қолмен жобаланып, құрастырылған — HTML, CSS және Vanilla JS."
-  },
-
   /* ----------------------------- ENGLISH -------------------------- */
   en: {
     "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
@@ -305,14 +207,13 @@ const I18N = {
 
 /* Определение стартового языка:
    1) сохранённый выбор в localStorage
-   2) язык браузера: kk → казахский, ru → русский
+   2) язык браузера: ru → русский
    3) английский по умолчанию (зарубежные клиенты Upwork/Fiverr) */
 function detectLanguage() {
   const saved = localStorage.getItem("lang");
   if (saved && I18N[saved]) return saved;
 
   const browser = (navigator.language || "").toLowerCase();
-  if (browser.startsWith("kk")) return "kz";
   if (browser.startsWith("ru")) return "ru";
   return "en";
 }
@@ -333,7 +234,7 @@ function applyLanguage(lang) {
   if (metaDesc) metaDesc.setAttribute("content", dict["meta.description"]);
 
   /* Атрибут lang для доступности и SEO */
-  document.documentElement.setAttribute("lang", lang === "kz" ? "kk" : lang);
+  document.documentElement.setAttribute("lang", lang);
 
   /* Состояние кнопок переключателя */
   document.querySelectorAll(".lang-switch__btn").forEach((btn) => {
