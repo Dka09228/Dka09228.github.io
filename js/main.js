@@ -404,8 +404,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const subject = encodeURIComponent(`Project inquiry from ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.classList.add("is-loading");
+
     window.location.href =
       `mailto:kurmet.dosmagambetov2004@gmail.com?subject=${subject}&body=${body}`;
+
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove("is-loading");
+    }, 1200);
   });
 
   /* ================================================================

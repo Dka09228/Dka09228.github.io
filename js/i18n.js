@@ -14,6 +14,7 @@ const I18N = {
     "meta.description": "Full-Stack Software Engineer и Automation Engineer. Разработка REST API на FastAPI и Golang, микросервисная архитектура, PostgreSQL, Docker, CI/CD, автоматизация бизнес-процессов и корпоративные интеграции.",
 
     "header.online": "онлайн",
+    "a11y.skip": "Перейти к содержимому",
 
     "nav.about": "Профиль",
     "nav.services": "Услуги",
@@ -112,6 +113,7 @@ const I18N = {
     "meta.description": "Full-Stack Software Engineer and Automation Engineer. REST API development with FastAPI and Golang, microservice architecture, PostgreSQL, Docker, CI/CD, business process automation and enterprise integrations.",
 
     "header.online": "online",
+    "a11y.skip": "Skip to content",
 
     "nav.about": "Profile",
     "nav.services": "Services",
