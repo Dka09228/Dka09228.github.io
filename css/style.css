@@ -93,6 +93,26 @@ ul { list-style: none; }
   border-radius: 4px;
 }
 
+/* Доступность: skip-link для клавиатурной навигации */
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 1100;
+  padding: 0.7rem 1.2rem;
+  background: var(--accent);
+  color: #06080f;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: top 0.25s ease;
+}
+.skip-link:focus-visible {
+  top: 1rem;
+  outline-offset: 0;
+}
+
 /* Уважение к prefers-reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -274,7 +294,7 @@ body.cursor-enabled label { cursor: none; }
 }
 
 .theme-toggle {
-  width: 38px; height: 38px;
+  width: 44px; height: 44px;
   display: grid;
   place-items: center;
   border: 1px solid var(--border);
@@ -290,7 +310,11 @@ body.cursor-enabled label { cursor: none; }
 .burger {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
+  min-width: 44px;
+  min-height: 44px;
   background: none;
   border: none;
   padding: 6px;
@@ -327,6 +351,25 @@ body.cursor-enabled label { cursor: none; }
   transform: translateY(-3px);
   box-shadow: 0 14px 40px -10px var(--glow);
 }
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+  transform: none;
+}
+.btn.is-loading {
+  position: relative;
+  color: transparent;
+}
+.btn.is-loading::after {
+  content: "";
+  position: absolute;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  animation: btn-spin 0.7s linear infinite;
+}
+@keyframes btn-spin { to { transform: rotate(360deg); } }
 .btn--ghost {
   border-color: var(--border);
   background: var(--surface);
