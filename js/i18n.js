@@ -11,7 +11,7 @@ const I18N = {
   /* ----------------------------- РУССКИЙ -------------------------- */
   ru: {
     "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
-    "meta.description": "Full-Stack Software Engineer и Automation Engineer. Разработка REST API на FastAPI и Golang, микросервисная архитектура, PostgreSQL, Docker, CI/CD, автоматизация бизнес-процессов и корпоративные интеграции.",
+    "meta.description": "Full-Stack Software Engineer и Automation Engineer. Разработка REST API на FastAPI, микросервисная архитектура, PostgreSQL, Docker, CI/CD, автоматизация бизнес-процессов и корпоративные интеграции.",
 
     "header.online": "онлайн",
     "a11y.skip": "Перейти к содержимому",
@@ -49,11 +49,9 @@ const I18N = {
     "services.title": "Что я делаю для бизнеса",
     "services.subtitle": "Каждая услуга — это законченный модуль: от анализа задачи до развёрнутого в продакшене решения.",
     "services.s1.title": "Full-Stack Development",
-    "services.s1.text": "Полный цикл разработки веб-приложений: React/TypeScript на фронтенде, Python и Golang на бэкенде.",
+    "services.s1.text": "Полный цикл разработки веб-приложений: React/TypeScript на фронтенде, Python на бэкенде.",
     "services.s2.title": "Backend Development",
     "services.s2.text": "Надёжные серверные системы на FastAPI: бизнес-логика, аутентификация, фоновые задачи, интеграции.",
-    "services.s3.title": "Golang Development",
-    "services.s3.text": "Высоконагруженные сервисы на Go: конкурентная обработка, низкие задержки, эффективное использование ресурсов.",
     "services.s4.title": "API Development",
     "services.s4.text": "Проектирование и разработка REST API: версионирование, документация OpenAPI, безопасность и производительность.",
     "services.s5.title": "Database Design",
@@ -84,8 +82,6 @@ const I18N = {
     "portfolio.subtitle": "Системы, которые уже решают реальные задачи бизнеса.",
     "portfolio.p1.title": "Workforce Management система",
     "portfolio.p1.text": "Корпоративная система управления персоналом: учёт смен, автоматические отчёты, интеграция с внутренними сервисами компании.",
-    "portfolio.p2.title": "Высоконагруженный API-сервис",
-    "portfolio.p2.text": "Микросервис на Golang для обработки потоков данных: конкурентная обработка, кеширование Redis, мониторинг и алертинг.",
     "portfolio.p3.title": "Платформа автоматизации процессов",
     "portfolio.p3.text": "Backend мобильного приложения и пайплайны автоматизации: интеграция внешних API, фоновые задачи, CI/CD-развёртывание.",
     "portfolio.view": "Код на GitHub",
@@ -110,7 +106,7 @@ const I18N = {
   /* ----------------------------- ENGLISH -------------------------- */
   en: {
     "meta.title": "Kurmet Dosmagambet — Full-Stack Software Engineer & Automation Engineer",
-    "meta.description": "Full-Stack Software Engineer and Automation Engineer. REST API development with FastAPI and Golang, microservice architecture, PostgreSQL, Docker, CI/CD, business process automation and enterprise integrations.",
+    "meta.description": "Full-Stack Software Engineer and Automation Engineer. REST API development with FastAPI, microservice architecture, PostgreSQL, Docker, CI/CD, business process automation and enterprise integrations.",
 
     "header.online": "online",
     "a11y.skip": "Skip to content",
@@ -148,11 +144,9 @@ const I18N = {
     "services.title": "What I do for business",
     "services.subtitle": "Every service is a complete module: from task analysis to a solution deployed in production.",
     "services.s1.title": "Full-Stack Development",
-    "services.s1.text": "Full-cycle web application development: React/TypeScript on the frontend, Python and Golang on the backend.",
+    "services.s1.text": "Full-cycle web application development: React/TypeScript on the frontend, Python on the backend.",
     "services.s2.title": "Backend Development",
     "services.s2.text": "Reliable server-side systems with FastAPI: business logic, authentication, background jobs, integrations.",
-    "services.s3.title": "Golang Development",
-    "services.s3.text": "High-load services in Go: concurrent processing, low latency, efficient resource usage.",
     "services.s4.title": "API Development",
     "services.s4.text": "REST API design and development: versioning, OpenAPI documentation, security and performance.",
     "services.s5.title": "Database Design",
@@ -183,8 +177,6 @@ const I18N = {
     "portfolio.subtitle": "Systems already solving real business problems.",
     "portfolio.p1.title": "Workforce Management System",
     "portfolio.p1.text": "Enterprise staff management system: shift tracking, automated reporting, integration with internal company services.",
-    "portfolio.p2.title": "High-Load API Service",
-    "portfolio.p2.text": "A Golang microservice for processing data streams: concurrent processing, Redis caching, monitoring and alerting.",
     "portfolio.p3.title": "Process Automation Platform",
     "portfolio.p3.text": "Mobile app backend and automation pipelines: external API integrations, background jobs, CI/CD deployment.",
     "portfolio.view": "Code on GitHub",
