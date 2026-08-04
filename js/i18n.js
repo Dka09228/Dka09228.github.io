@@ -84,6 +84,8 @@ const I18N = {
     "portfolio.p1.text": "Корпоративная система управления персоналом: учёт смен, автоматические отчёты, интеграция с внутренними сервисами компании.",
     "portfolio.p3.title": "Платформа автоматизации процессов",
     "portfolio.p3.text": "Backend мобильного приложения и пайплайны автоматизации: интеграция внешних API, фоновые задачи, CI/CD-развёртывание.",
+    "portfolio.p4.title": "Helpdesk-система техподдержки",
+    "portfolio.p4.text": "Корпоративная система техподдержки: обработка заявок по SLA, Kanban-доска задач для агентов, база знаний.",
     "portfolio.view": "Код на GitHub",
 
     "testimonials.module": "// МОДУЛЬ 05 — ОТЗЫВЫ",
@@ -182,6 +184,8 @@ const I18N = {
     "portfolio.p1.text": "Enterprise staff management system: shift tracking, automated reporting, integration with internal company services.",
     "portfolio.p3.title": "Process Automation Platform",
     "portfolio.p3.text": "Mobile app backend and automation pipelines: external API integrations, background jobs, CI/CD deployment.",
+    "portfolio.p4.title": "Support Helpdesk System",
+    "portfolio.p4.text": "Enterprise support helpdesk: SLA-based ticket handling, Kanban task board for agents, knowledge base.",
     "portfolio.view": "Code on GitHub",
 
     "testimonials.module": "// MODULE 05 — TESTIMONIALS",
