@@ -86,14 +86,8 @@ const I18N = {
     "portfolio.p3.text": "Backend мобильного приложения и пайплайны автоматизации: интеграция внешних API, фоновые задачи, CI/CD-развёртывание.",
     "portfolio.p4.title": "Helpdesk-система техподдержки",
     "portfolio.p4.text": "Корпоративная система техподдержки: обработка заявок по SLA, Kanban-доска задач для агентов, база знаний.",
-    "portfolio.view": "Код на GitHub",
 
-    "testimonials.module": "// МОДУЛЬ 05 — ОТЗЫВЫ",
-    "testimonials.title": "Что говорят клиенты",
-    "testimonials.empty": "Здесь появятся отзывы первых клиентов. Хотите стать одним из них — напишите мне.",
-    "testimonials.cta": "Обсудить проект",
-
-    "contact.module": "// МОДУЛЬ 06 — ШЛЮЗ СВЯЗИ",
+    "contact.module": "// МОДУЛЬ 05 — ШЛЮЗ СВЯЗИ",
     "contact.title": "Обсудим ваш проект",
     "contact.subtitle": "Отвечаю в течение 24 часов. Опишите задачу — предложу решение и оценку.",
     "contact.form.name": "Ваше имя",
@@ -186,14 +180,8 @@ const I18N = {
     "portfolio.p3.text": "Mobile app backend and automation pipelines: external API integrations, background jobs, CI/CD deployment.",
     "portfolio.p4.title": "Support Helpdesk System",
     "portfolio.p4.text": "Enterprise support helpdesk: SLA-based ticket handling, Kanban task board for agents, knowledge base.",
-    "portfolio.view": "Code on GitHub",
 
-    "testimonials.module": "// MODULE 05 — TESTIMONIALS",
-    "testimonials.title": "What clients say",
-    "testimonials.empty": "Reviews from my first clients will appear here. Want to be one of them — drop me a line.",
-    "testimonials.cta": "Discuss a project",
-
-    "contact.module": "// MODULE 06 — CONTACT GATEWAY",
+    "contact.module": "// MODULE 05 — CONTACT GATEWAY",
     "contact.title": "Let's discuss your project",
     "contact.subtitle": "I reply within 24 hours. Describe your task — I'll propose a solution and an estimate.",
     "contact.form.name": "Your name",

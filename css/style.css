@@ -788,44 +788,6 @@ section[id] { scroll-margin-top: 90px; }
 .project h3 { font-size: 1.1rem; }
 .project p { font-size: 0.88rem; color: var(--text-dim); flex-grow: 1; }
 .project__tags .chip { font-size: 0.72rem; padding: 0.25rem 0.7rem; }
-.project__link {
-  margin-top: 0.4rem;
-  font-size: 0.82rem;
-  color: var(--accent);
-  transition: letter-spacing 0.25s ease;
-}
-.project__link:hover { letter-spacing: 0.04em; }
-
-/* ------------------------------ Testimonials ---------------------- */
-.testimonials__empty {
-  margin-top: 2.5rem;
-  padding: 3.5rem 2rem;
-  text-align: center;
-  display: grid;
-  gap: 1.2rem;
-  justify-items: center;
-}
-.testimonials__signal {
-  color: var(--accent);
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  animation: signal 2.8s ease-in-out infinite;
-}
-@keyframes signal { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
-.testimonials__empty p:not(.testimonials__signal) {
-  max-width: 460px;
-  color: var(--text-dim);
-}
-.testimonials__grid {
-  margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.2rem;
-}
-.testimonial { padding: 1.8rem; }
-.testimonial p { color: var(--text); margin-bottom: 1rem; }
-.testimonial footer { font-size: 0.85rem; color: var(--text-dim); }
-
 /* ------------------------------ Contact --------------------------- */
 .contact__grid {
   display: grid;
