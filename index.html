@@ -483,8 +483,11 @@
             </a>
           </div>
 
-          <!-- Форма (без backend: открывает почтовый клиент с готовым письмом) -->
-          <form class="contact__form glass reveal" id="contactForm" novalidate>
+          <!-- Форма (без backend: отправка через Web3Forms) -->
+          <form class="contact__form glass reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="5672e628-5a0f-4065-9b2b-c751324030dd" />
+            <input type="hidden" name="subject" value="New inquiry from portfolio site" />
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="field">
               <label for="fName" data-i18n="contact.form.name">Ваше имя</label>
               <input type="text" id="fName" name="name" required autocomplete="name" />
@@ -498,7 +501,7 @@
               <textarea id="fMsg" name="message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.form.submit">Отправить сообщение</button>
-            <p class="contact__hint mono" data-i18n="contact.form.hint">// откроется ваш почтовый клиент с готовым письмом</p>
+            <p class="contact__hint mono" id="formStatus" data-i18n="contact.form.hint" role="status" aria-live="polite">// заявки приходят мне на почту напрямую</p>
           </form>
         </div>
       </div>

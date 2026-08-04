@@ -98,7 +98,10 @@ const I18N = {
     "contact.form.email": "Ваш email",
     "contact.form.message": "Опишите задачу",
     "contact.form.submit": "Отправить сообщение",
-    "contact.form.hint": "// откроется ваш почтовый клиент с готовым письмом",
+    "contact.form.hint": "// заявки приходят мне на почту напрямую",
+    "contact.form.sending": "// отправка…",
+    "contact.form.success": "✓ Сообщение отправлено — отвечу в течение 24 часов",
+    "contact.form.error": "Не удалось отправить. Напишите напрямую: kurmet.dosmagambetov2004@gmail.com",
 
     "footer.built": "Спроектировано и собрано вручную — HTML, CSS и Vanilla JS."
   },
@@ -193,7 +196,10 @@ const I18N = {
     "contact.form.email": "Your email",
     "contact.form.message": "Describe your task",
     "contact.form.submit": "Send message",
-    "contact.form.hint": "// your email client will open with a ready-to-send message",
+    "contact.form.hint": "// sent straight to my inbox",
+    "contact.form.sending": "// sending…",
+    "contact.form.success": "✓ Message sent — I'll reply within 24 hours",
+    "contact.form.error": "Couldn't send. Email me directly: kurmet.dosmagambetov2004@gmail.com",
 
     "footer.built": "Designed and built by hand — HTML, CSS and Vanilla JS."
   }

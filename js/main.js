@@ -391,31 +391,50 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* ================================================================
-     13. Контактная форма — без backend (mailto)
+     13. Контактная форма — отправка через Web3Forms (без backend)
   ================================================================ */
   const form = document.getElementById("contactForm");
-  form.addEventListener("submit", (e) => {
+  const formStatus = document.getElementById("formStatus");
+
+  function setFormStatus(key, state) {
+    if (!formStatus) return;
+    const lang = document.documentElement.getAttribute("lang") || "ru";
+    const dict = typeof I18N !== "undefined" ? I18N[lang] : null;
+    formStatus.textContent = (dict && dict[key]) || "";
+    formStatus.classList.remove("is-success", "is-error");
+    if (state) formStatus.classList.add(state);
+  }
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
-
-    const name = document.getElementById("fName").value.trim();
-    const email = document.getElementById("fEmail").value.trim();
-    const message = document.getElementById("fMsg").value.trim();
-
-    const subject = encodeURIComponent(`Project inquiry from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
+    if (form.querySelector('.botcheck').checked) return; // honeypot
 
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.classList.add("is-loading");
+    setFormStatus("contact.form.sending");
 
-    window.location.href =
-      `mailto:kurmet.dosmagambetov2004@gmail.com?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form),
+      });
+      const result = await response.json();
 
-    setTimeout(() => {
+      if (response.ok && result.success) {
+        form.reset();
+        setFormStatus("contact.form.success", "is-success");
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
+    } catch (err) {
+      setFormStatus("contact.form.error", "is-error");
+    } finally {
       submitBtn.disabled = false;
       submitBtn.classList.remove("is-loading");
-    }, 1200);
+    }
   });
 
   /* ================================================================
